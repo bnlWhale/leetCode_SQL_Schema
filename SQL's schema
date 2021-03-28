@@ -66,3 +66,21 @@ LeetCode 1795
   PRIMARY KEY (`product_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
   
+  
+  Leetcode 1789
+  CREATE TABLE If Not Exists `Employee` (
+  `employee_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `department_id` int(11) NOT NULL,
+  `primary_flag` enum('Y','N') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`employee_id`, `department_id`)
+);
+
+
+Truncate table Employee;
+insert into Employee (employee_id, department_id, primary_flag) values ('1', '1', 'N');
+insert into Employee (employee_id, department_id, primary_flag) values ('2', '1', 'Y');
+insert into Employee (employee_id, department_id, primary_flag) values ('2', '2', 'N');
+insert into Employee (employee_id, department_id, primary_flag) values ('3', '3', 'N');
+insert into Employee (employee_id, department_id, primary_flag) values ('4', '2', 'N');
+insert into Employee (employee_id, department_id, primary_flag) values ('4', '3', 'Y');
+insert into Employee (employee_id, department_id, primary_flag) values ('4', '4', 'N');

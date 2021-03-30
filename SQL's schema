@@ -127,3 +127,22 @@ insert into Products_1 (product_id, store, price) values ('0', 'store3', '105');
 insert into Products_1 (product_id, store, price) values ('0', 'store2', '100');
 insert into Products_1 (product_id, store, price) values ('1', 'store1', '70');
 insert into Products_1 (product_id, store, price) values ('1', 'store3', '80');
+
+LeetCode 1127
+
+CREATE TABLE `Spending` (
+  `user_id` int(11),
+  `spend_date` date,
+  `amount` int(11) ,
+  `platform` enum('desktop','mobile') COLLATE utf8mb4_unicode_ci DEFAULT NULL
+ ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+insert into Spending (user_id, spend_date, platform, amount) values ('1', '2019-07-01', 'mobile', '100');
+insert into Spending (user_id, spend_date, platform, amount) values ('1', '2019-07-01', 'desktop', '100');
+insert into Spending (user_id, spend_date, platform, amount) values ('2', '2019-07-01', 'mobile', '100');
+insert into Spending (user_id, spend_date, platform, amount) values ('2', '2019-07-02', 'mobile', '100');
+insert into Spending (user_id, spend_date, platform, amount) values ('3', '2019-07-01', 'desktop', '100');
+insert into Spending (user_id, spend_date, platform, amount) values ('3', '2019-07-02', 'desktop', '100');
+

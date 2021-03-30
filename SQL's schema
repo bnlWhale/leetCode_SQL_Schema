@@ -111,3 +111,19 @@ Truncate table Championships;
 insert into Championships (year, Wimbledon, Fr_open, US_open, Au_open) values ('2018', '1', '1', '1', '1');
 insert into Championships (year, Wimbledon, Fr_open, US_open, Au_open) values ('2019', '1', '1', '2', '2');
 insert into Championships (year, Wimbledon, Fr_open, US_open, Au_open) values ('2020', '2', '1', '2', '2');
+
+
+LeetCode 1777
+
+CREATE TABLE `Products_1` (
+  `product_id` int(11),
+  `price` int(11) NOT NULL,
+  `store` enum('store1','store2','store3') COLLATE utf8mb4_unicode_ci DEFAULT NULL
+ ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+Truncate table Products_1;
+insert into Products_1 (product_id, store, price) values ('0', 'store1', '95');
+insert into Products_1 (product_id, store, price) values ('0', 'store3', '105');
+insert into Products_1 (product_id, store, price) values ('0', 'store2', '100');
+insert into Products_1 (product_id, store, price) values ('1', 'store1', '70');
+insert into Products_1 (product_id, store, price) values ('1', 'store3', '80');

@@ -179,3 +179,20 @@ insert into Transactions (user_id, transaction_date, amount) values ('9', '2020-
 insert into Transactions (user_id, transaction_date, amount) values ('9', '2020-01-25', '66');
 insert into Transactions (user_id, transaction_date, amount) values ('8', '2020-01-28', '1');
 insert into Transactions (user_id, transaction_date, amount) values ('9', '2020-01-25', '99');
+
+LeetCode 1193
+CREATE TABLE `Transactions_1` (
+  `id` int(11),
+  `country` varchar(4) NOT NULL,
+   `state` enum('approved','declined'),
+   `amount` int(11) ,
+  `trans_date` date
+ ); 
+
+
+Truncate table Transactions_1;
+insert into Transactions_1 (id, country, state, amount, trans_date) values (121, 'US', 'approved', '1000', '2018-12-18');
+insert into Transactions_1 (id, country, state, amount, trans_date) values (122, 'US', 'declined', '2000', '2018-12-19');
+insert into Transactions_1 (id, country, state, amount, trans_date) values (123, 'US', 'approved', '2000', '2019-01-01');
+insert into Transactions_1 (id, country, state, amount, trans_date) values (124, 'DE', 'approved', '2000', '2019-01-07');
+
